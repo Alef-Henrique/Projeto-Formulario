@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+html{
+
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+:root{
+    --cor-primaria:white;
+    --cor-secundaria:#1736e4e1;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    background-image: url(../imagens/fundo\ azul.jpg);
+
+}
+
+
+form{
+    background-color: var(--cor-primaria);
+    width: 90%;
+    min-width: 22em;
+    padding: 1em;
+    border-left: 8px solid var(--cor-secundaria);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    
+ 
+}
+fieldset{
+    border:none;
+    margin: 0;
+    
+    
+}
+input, label{
+    margin-bottom: 1.75em;
+    padding: .5em;
+}
+
+input {
+    
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    border: var(--cor-primaria);
+    border-bottom: solid 2px var(--cor-secundaria);
+    font-size: 14px;
+    
+}
+input:focus{
+    outline: 0;
+     
+}
+
+legend{
+    color: var(--cor-secundaria);
+    font-size: 2em;
+    font-weight: 100;
+    padding: .5em 0 .5em;
+}
+
+.botoes{
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn_login1{
+    margin: 0;
+    padding: .6em;
+    background-color: var(--cor-secundaria);
+    border: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;    
+    color: var(--cor-primaria);
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.btn_cadastro{
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold; 
+    font-size: 14.5px;
+    text-transform: uppercase;
+    width: 100%;
+    
+}
+.containe_botoes{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+.containe_botoes2{
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+}
+.btn_esqueci_senha{
+    font-size: .8em;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 470px) {
+
+
+    form {
+        width: 90%;
+        min-width: 22em;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .containe_botoes{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+}
